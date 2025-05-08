@@ -1,0 +1,16 @@
+[package]
+name = "reth-ex-witness-extract"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+reth-ethereum = { git = "https://github.com/paradigmxyz/reth", rev = "a3c067c2b23353b0f5e78ceff1fb2ea35d32c1db", features = [
+    "node",
+] }
+
+alloy-rpc-types-debug = { version = "0.15.10", default-features = false }
+alloy-rlp = { version = "0.3.10", default-features = false, features = [
+    "core-net",
+] }
+
+eyre = "0.6"
